@@ -6,13 +6,13 @@ export const Portfolio = () => {
   const projects = [
     {
       image: heroGarden,
-      title: "Vibrant Color Symphony",
-      description: "A transformation showcasing layered seasonal color, from deep burgundy foliage to bright coral and golden accents, creating a painterly path that evolves through the seasons."
+      title: "Sinfonía de Color Vibrante",
+      description: "Una transformación que muestra capas de color estacional, desde follaje borgoña profundo hasta acentos coral brillante y dorados, creando un camino pictórico que evoluciona a través de las estaciones."
     },
     {
       image: peacefulGarden,
-      title: "Serene Garden Sanctuary",
-      description: "An elegant composition balancing architectural elements with soft natural textures, featuring sculptural plants and peaceful green spaces for contemplation and rest."
+      title: "Santuario de Jardín Sereno",
+      description: "Una composición elegante que equilibra elementos arquitectónicos con texturas naturales suaves, con plantas escultóricas y espacios verdes pacíficos para la contemplación y el descanso."
     }
   ];
 
@@ -20,13 +20,13 @@ export const Portfolio = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-          Featured Transformations
+          Transformaciones Destacadas
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-12 rounded-full" />
         
         <p className="text-center text-lg text-muted-foreground mb-16 max-w-2xl mx-auto">
-          Each project is a unique collaboration between artistic vision and natural beauty, 
-          crafted to create outdoor spaces that inspire and transform.
+          Cada proyecto es una colaboración única entre visión artística y belleza natural, 
+          diseñada para crear espacios exteriores que inspiran y transforman.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

@@ -4,23 +4,23 @@ export const Services = () => {
   const services = [
     {
       icon: Sparkles,
-      title: "Garden Transformation",
-      description: "Complete reimagining of your outdoor space, from concept to installation, creating a cohesive artistic vision."
+      title: "Transformación de Jardines",
+      description: "Reimaginación completa de tu espacio exterior, desde el concepto hasta la instalación, creando una visión artística cohesiva."
     },
     {
       icon: Palette,
-      title: "Artistic Garden Planning",
-      description: "Custom design plans that treat your garden as a canvas, focusing on color harmony, texture, and visual flow."
+      title: "Planificación Artística de Jardines",
+      description: "Planes de diseño personalizados que tratan tu jardín como un lienzo, enfocándose en la armonía del color, la textura y el flujo visual."
     },
     {
       icon: Sprout,
-      title: "Plant Selection & Composition",
-      description: "Expertly curated plant palettes that work together like brushstrokes, creating depth, contrast, and seasonal interest."
+      title: "Selección y Composición de Plantas",
+      description: "Paletas de plantas expertamente seleccionadas que funcionan juntas como pinceladas, creando profundidad, contraste e interés estacional."
     },
     {
       icon: Calendar,
-      title: "Seasonal Redesigns",
-      description: "Evolving garden compositions that transform throughout the year, ensuring your outdoor space remains vibrant and inspiring."
+      title: "Rediseños Estacionales",
+      description: "Composiciones de jardín en evolución que se transforman a lo largo del año, asegurando que tu espacio exterior permanezca vibrante e inspirador."
     }
   ];
 
@@ -28,12 +28,12 @@ export const Services = () => {
     <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-          Services
+          Servicios
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-12 rounded-full" />
         
         <p className="text-center text-lg text-muted-foreground mb-16 max-w-2xl mx-auto">
-          Comprehensive landscape design services that blend artistic vision with horticultural expertise
+          Servicios integrales de diseño paisajístico que fusionan visión artística con experiencia hortícola
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
