@@ -6,7 +6,7 @@ export const Testimonials = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-          Client Testimonials
+          Testimonios de Clientes
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-12 rounded-full" />
         
@@ -15,10 +15,10 @@ export const Testimonials = () => {
             <CardContent className="p-0">
               <Quote className="w-12 h-12 text-accent mx-auto mb-4 opacity-50" />
               <p className="text-muted-foreground italic mb-4">
-                Client testimonials will be featured here
+                Los testimonios de clientes se mostrarán aquí
               </p>
               <p className="text-sm text-muted-foreground">
-                Share feedback from your satisfied clients to build trust and showcase the impact of your work
+                Comparte comentarios de tus clientes satisfechos para generar confianza y mostrar el impacto de tu trabajo
               </p>
             </CardContent>
           </Card>

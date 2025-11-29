@@ -23,17 +23,17 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto animate-in fade-in duration-1000">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-            Transforming Gardens into Living Works of Art
+            Transformando Jardines en Obras de Arte Vivas
           </h1>
           <p className="text-xl md:text-2xl text-white/95 mb-8 drop-shadow-md font-light max-w-2xl mx-auto">
-            Landscape design that blends nature, color, and emotion
+            Diseño paisajístico que fusiona naturaleza, color y emoción
           </p>
           <Button 
             onClick={scrollToBooking}
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >
-            Book a Free 15-Minute Consultation
+            Reserva una Consulta Gratuita de 15 Minutos
           </Button>
         </div>
       </div>
