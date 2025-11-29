@@ -2,10 +2,6 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-garden.jpg";
 
 export const Hero = () => {
-  const scrollToBooking = () => {
-    document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -29,11 +25,17 @@ export const Hero = () => {
             Diseño paisajístico que fusiona naturaleza, color y emoción
           </p>
           <Button 
-            onClick={scrollToBooking}
+            asChild
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >
-            Reserva una Consulta Gratuita de 15 Minutos
+            <a 
+              href="https://calendar.app.google/9wpvxnju81sn7adC6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Reserva una Consulta Gratuita de 15 Minutos
+            </a>
           </Button>
         </div>
       </div>

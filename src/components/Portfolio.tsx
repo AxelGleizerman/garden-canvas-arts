@@ -1,18 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
-import heroGarden from "@/assets/hero-garden.jpg";
-import peacefulGarden from "@/assets/garden-peaceful.jpg";
+import portfolioVideo from "@/assets/WhatsApp Video 2025-11-27 at 20.13.13 (1).mp4";
+import portfolioImage from "@/assets/WhatsApp Image 2025-11-27 at 20.22.33.jpeg";
 
 export const Portfolio = () => {
   const projects = [
     {
-      image: heroGarden,
-      title: "Sinfonía de Color Vibrante",
-      description: "Una transformación que muestra capas de color estacional, desde follaje borgoña profundo hasta acentos coral brillante y dorados, creando un camino pictórico que evoluciona a través de las estaciones."
+      video: portfolioVideo,
+      title: "Transformación en Proceso",
+      description: "Un vistazo al proceso creativo de transformación de jardines, mostrando cómo cada espacio evoluciona desde su estado inicial hasta convertirse en una obra de arte viviente."
     },
     {
-      image: peacefulGarden,
-      title: "Santuario de Jardín Sereno",
-      description: "Una composición elegante que equilibra elementos arquitectónicos con texturas naturales suaves, con plantas escultóricas y espacios verdes pacíficos para la contemplación y el descanso."
+      image: portfolioImage,
+      title: "Obra de Arte Natural",
+      description: "Una composición que captura la esencia del diseño paisajístico artístico, donde cada elemento se integra armoniosamente para crear un espacio único y expresivo."
     }
   ];
 
@@ -35,13 +35,24 @@ export const Portfolio = () => {
               key={index} 
               className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] bg-card"
             >
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent" />
+              <div className="relative h-96 md:h-[500px] overflow-hidden">
+                {project.video ? (
+                  <video 
+                    src={project.video} 
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                    controls
+                    muted
+                    loop
+                    playsInline
+                  />
+                ) : (
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent pointer-events-none" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">
