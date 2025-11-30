@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import portfolioVideo from "@/assets/WhatsApp Video 2025-11-27 at 20.13.13 (1).mp4";
-import portfolioImage from "@/assets/WhatsApp Image 2025-11-27 at 20.22.33.jpeg";
+import portfolioVideo from "@/assets/portfolio-video.mp4";
+import portfolioImage from "@/assets/portfolio-image.jpeg";
 
 export const Portfolio = () => {
   const projects = [
