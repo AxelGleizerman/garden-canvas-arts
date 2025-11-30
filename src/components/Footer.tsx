@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,17 +11,13 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 font-display">Contacto</h3>
             <div className="space-y-3">
-              <a href="mailto:hello@gardenart.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="mailto:mariamargaritacopello@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">hello@gardenart.com</span>
-              </a>
-              <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4" />
-                <span className="text-sm">(123) 456-7890</span>
+                <span className="text-sm">mariamargaritacopello@gmail.com</span>
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">Tu Ciudad, Estado</span>
+                <span className="text-sm">Don Torcuato - Tigre, Buenos Aires</span>
               </div>
             </div>
           </div>
@@ -30,10 +26,14 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 font-display">Enlaces Rápidos</h3>
             <div className="space-y-2">
-              <a href="#about" className="block text-sm hover:text-accent transition-colors">Sobre Mí</a>
-              <a href="#portfolio" className="block text-sm hover:text-accent transition-colors">Portafolio</a>
-              <a href="#services" className="block text-sm hover:text-accent transition-colors">Servicios</a>
-              <a href="#booking" className="block text-sm hover:text-accent transition-colors">Reservar Consulta</a>
+              <a 
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0vWdkTIqMkULAxHduoS2E4hVOU_qLs-_DfWOelFQq101APig_lEW8TK1NHtxkVlrHWrnGSKiS_" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm hover:text-accent transition-colors"
+              >
+                Reservar Consulta
+              </a>
             </div>
           </div>
 
@@ -52,15 +52,6 @@ export const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-accent flex items-center justify-center transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>

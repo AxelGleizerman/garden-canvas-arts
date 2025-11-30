@@ -34,7 +34,7 @@ export const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Reserva una Consulta Gratuita de 15 Minutos
+              Reserva una Consulta
             </a>
           </Button>
         </div>
