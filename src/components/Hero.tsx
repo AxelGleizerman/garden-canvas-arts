@@ -5,15 +5,20 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `linear-gradient(rgba(42, 55, 48, 0.4), rgba(42, 55, 48, 0.6)), url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      />
+      <style>{`
+        .hero-bg {
+          background-image: linear-gradient(rgba(42, 55, 48, 0.4), rgba(42, 55, 48, 0.6)), url(${heroImage});
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        @media (min-width: 769px) {
+          .hero-bg {
+            background-attachment: fixed;
+          }
+        }
+      `}</style>
+      <div className="absolute inset-0 z-0 hero-bg" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
